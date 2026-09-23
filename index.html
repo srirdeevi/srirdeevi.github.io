@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Ramya Deevi — Cloud Architect &amp; Agentic AI</title>
+<meta name="description" content="Sri Ramya Deevi — Principal Cloud Architect building agentic AI systems, writing on Zero Trust and DevSecOps, and publishing cloud security research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b0f17;
+    --bg-panel:#10161f;
+    --fg:#e8e6de;
+    --muted:#7d8494;
+    --dim:#4b5262;
+    --teal:#5fbba0;
+    --teal-dim:#1d9e75;
+    --purple:#a39cf2;
+    --border:#232b3a;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font-family:'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+    font-size:15px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  .window{
+    max-width:760px;
+    margin:48px auto 96px;
+    padding:0 20px;
+  }
+  .titlebar{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 14px;
+    background:var(--bg-panel);
+    border:1px solid var(--border);
+    border-bottom:none;
+    border-radius:8px 8px 0 0;
+  }
+  .dot{width:11px;height:11px;border-radius:50%;}
+  .dot.r{background:#e5645a;}
+  .dot.y{background:#e5b95a;}
+  .dot.g{background:#5fbb7e;}
+  .titlebar span.path{
+    margin-left:10px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  main{
+    border:1px solid var(--border);
+    border-radius:0 0 8px 8px;
+    padding:36px 32px 44px;
+    background:linear-gradient(180deg, rgba(95,187,160,0.03), transparent 200px);
+  }
+  .prompt{
+    color:var(--teal);
+    white-space:pre-wrap;
+    word-break:break-word;
+  }
+  .prompt .user{color:var(--purple);}
+  .prompt .cmd{color:var(--fg);font-weight:600;}
+  section{margin-top:38px;}
+  section:first-of-type{margin-top:0;}
+  .out{
+    margin:10px 0 0;
+    color:var(--fg);
+    max-width:70ch;
+  }
+  .out p{margin:0 0 12px;}
+  .muted{color:var(--muted);}
+  h1{
+    font-size:22px;
+    font-weight:700;
+    margin:10px 0 4px;
+    color:var(--fg);
+  }
+  .role{color:var(--teal);font-size:15px;margin:0 0 2px;}
+  .loc{color:var(--muted);font-size:13px;margin:0;}
+  a{color:var(--purple);text-decoration:none;border-bottom:1px solid rgba(163,156,242,0.35);}
+  a:hover{color:var(--teal);border-bottom-color:var(--teal);}
+  ul.tree{list-style:none;margin:10px 0 0;padding:0;}
+  ul.tree li{
+    padding:10px 0;
+    border-bottom:1px dashed var(--border);
+  }
+  ul.tree li:last-child{border-bottom:none;}
+  .branch{color:var(--dim);}
+  .proj-name{color:var(--teal);font-weight:600;}
+  .proj-desc{display:block;color:var(--muted);margin-top:3px;font-size:13.5px;max-width:60ch;}
+  ul.log{list-style:none;margin:10px 0 0;padding:0;}
+  ul.log li{padding:8px 0;border-bottom:1px dashed var(--border);font-size:14px;}
+  ul.log li:last-child{border-bottom:none;}
+  .tag{color:var(--dim);}
+  .tag.info{color:var(--teal-dim);}
+  .tag.pending{color:var(--muted);}
+  ul.contact{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:8px;}
+  ul.contact li:before{content:"→ ";color:var(--dim);}
+  .cursor{
+    display:inline-block;
+    width:8px;height:16px;
+    background:var(--teal);
+    vertical-align:middle;
+    margin-left:6px;
+    animation:blink 1.1s steps(1) infinite;
+  }
+  @keyframes blink{50%{opacity:0;}}
+  .typed{border-right:2px solid var(--teal);white-space:nowrap;overflow:hidden;display:inline-block;
+    animation:typing 1.6s steps(28,end) forwards, caret 0.9s step-end infinite;
+    max-width:0;
+  }
+  @keyframes typing{from{max-width:0;}to{max-width:28ch;}}
+  @keyframes caret{50%{border-color:transparent;}}
+  footer{
+    margin-top:44px;
+    padding-top:18px;
+    border-top:1px solid var(--border);
+    color:var(--muted);
+    font-size:13px;
+  }
+  @media (max-width:600px){
+    main{padding:26px 18px 34px;}
+    body{font-size:14px;}
+  }
+</style>
+</head>
+<body>
+<div class="window">
+  <div class="titlebar">
+    <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+    <span class="path">sri@portfolio: ~</span>
+  </div>
+  <main>
+
+    <section>
+      <div class="prompt"><span class="user">sri@portfolio</span>:~$ <span class="cmd typed">whoami</span></div>
+      <div class="out">
+        <h1>Sri Ramya Deevi</h1>
+        <p class="role">Principal Cloud Architect</p>
+        <p class="loc">Washington D.C.–Baltimore area · 17+ years in cloud, security &amp; DevSecOps</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="prompt"><span class="user">sri@portfolio</span>:~$ <span class="cmd">cat about.md</span></div>
+      <div class="out">
+        <p>I design and build hybrid cloud and Zero Trust architectures across financial services, healthcare, and public sector systems. Alongside that, I'm hands-on building agentic AI systems from the ground up — writing the code myself, one project at a time — to understand how autonomous tools, retrieval, and reasoning loops actually work under the hood.</p>
+        <p class="muted">AWS Solutions Architect · AWS DevOps Professional · PMP · M.S. Computer Science</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="prompt"><span class="user">sri@portfolio</span>:~$ <span class="cmd">tree ./agentic-ai-portfolio</span></div>
+      <ul class="tree">
+        <li>
+          <span class="branch">├──</span>
+          <a class="proj-name" href="https://github.com/srirdeevi/agentic-ai-portfolio" target="_blank" rel="noopener">01-basic-tool-use</a>
+          <span class="proj-desc">A tool-use agent implementing the Anthropic tool-use loop — calculator and weather tools, agent decides which to call.</span>
+        </li>
+        <li>
+          <span class="branch">├──</span>
+          <a class="proj-name" href="https://github.com/srirdeevi/agentic-ai-portfolio" target="_blank" rel="noopener">02-rag-agent</a>
+          <span class="proj-desc">A RAG pipeline over a company policy doc — chunked, embedded with sentence-transformers, retrieved via Chroma, answered locally through Ollama.</span>
+        </li>
+        <li>
+          <span class="branch">├──</span>
+          <a class="proj-name" href="https://github.com/srirdeevi/mcp-server" target="_blank" rel="noopener">03-mcp-server</a>
+          <span class="proj-desc">An MCP server wrapping the RAG agent as a discoverable tool, alongside employee-leave and ticket-lookup tools, over stdio transport.</span>
+        </li>
+        <li>
+          <span class="branch">└──</span>
+          <a class="proj-name" href="https://github.com/srirdeevi/ai-coding-agent" target="_blank" rel="noopener">04-ai-coding-agent</a>
+          <span class="proj-desc">A ReAct-style agent that plans, searches a codebase, reads files, and analyzes structure to answer "where is X implemented?"</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="writing">
+      <div class="prompt"><span class="user">sri@portfolio</span>:~$ <span class="cmd">tail -f blog.log</span></div>
+      <ul class="log">
+        <li><span class="tag info">[jul]</span> published → <a href="https://srirdeevi.hashnode.dev/from-documents-to-intelligent-answers-building-a-rag-agent-from-scratch-lessons-learned" target="_blank" rel="noopener">From Documents to Intelligent Answers: Building a RAG Agent from Scratch</a> <span class="muted">— Hashnode</span></li>
+        <li><span class="tag info">[jul]</span> published → <a href="https://dev.to/sri_d_6dfd4d31319a6389eaa/beyond-chatbots-wrapping-my-rag-agent-in-an-mcp-server-2m0n" target="_blank" rel="noopener">Beyond Chatbots: Wrapping My RAG Agent in an MCP Server</a> <span class="muted">— DEV Community</span></li>
+        <li><span class="tag pending">[soon]</span> drafting → Beyond RAG: Building an AI Coding Agent with Planning, Tool Execution &amp; ReAct Reasoning <span class="muted">— DEV Community</span></li>
+      </ul>
+    </section>
+
+    <section id="research">
+      <div class="prompt"><span class="user">sri@portfolio</span>:~$ <span class="cmd">cat research.md</span></div>
+      <div class="out">
+        <p>~20 peer-reviewed and industry papers across Zero Trust architecture, hybrid cloud, DevSecOps/GitOps, and AI/ML-driven security. Recipient of a Cybersecurity Excellence Award; contributes to award judging for Globee, Business Intelligence Group, and Claro Awards.</p>
+        <p>
+          <a href="https://www.researchgate.net/profile/Sri-Ramya-Deevi" target="_blank" rel="noopener">ResearchGate</a> ·
+          <a href="https://orcid.org/0009-0004-6454-977X" target="_blank" rel="noopener">ORCID</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="prompt"><span class="user">sri@portfolio</span>:~$ <span class="cmd">cat contact.md</span></div>
+      <ul class="contact">
+        <li><a href="https://github.com/srirdeevi" target="_blank" rel="noopener">github.com/srirdeevi</a></li>
+        <li><a href="https://dev.to/sri_d_6dfd4d31319a6389eaa" target="_blank" rel="noopener">dev.to/sri_d_6dfd4d31319a6389eaa</a></li>
+        <li><a href="https://srirdeevi.hashnode.dev" target="_blank" rel="noopener">srirdeevi.hashnode.dev</a></li>
+        <!-- TODO: replace # with your real LinkedIn URL -->
+        <li><a href="#" target="_blank" rel="noopener">linkedin.com/in/TODO-add-your-linkedin</a></li>
+        <!-- TODO: replace with your real contact email -->
+        <li><a href="mailto:TODO@example.com">TODO@example.com</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <span class="user" style="color:var(--purple)">sri@portfolio</span>:~$ <span class="cursor"></span>
+    </footer>
+
+  </main>
+</div>
+</body>
+</html>

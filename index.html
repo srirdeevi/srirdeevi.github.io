@@ -43,11 +43,8 @@
     }
     .avatar{
       width:110px;height:110px;border-radius:20px;
-      background:var(--panel);
-      display:flex;align-items:center;justify-content:center;
-      font-family:'IBM Plex Sans',sans-serif;font-size:11px;
-      color:#9AA3B2;text-align:center;line-height:1.4;
-      border:1px dashed #4a5268;
+      object-fit:cover;
+      display:block;
       margin-bottom:18px;
     }
     aside h1{font-size:21px;margin:0 0 4px;color:#fff;}
@@ -213,21 +210,125 @@
 
     <section id="toolkit" class="panel">
       <h2>The Toolkit</h2>
-      <p class="lede">[Short intro — how the stack is grouped.]</p>
+      <p class="lede">Grouped by where I use it — cloud and delivery on one side, the agentic AI projects on the other.</p>
+
       <div class="stack-group">
-        <h3>[Group 1 name, e.g. Cloud &amp; Infrastructure]</h3>
+        <h3>Cloud Platforms</h3>
         <div class="tag-row">
-          <span class="tag">[Tag]</span>
-          <span class="tag">[Tag]</span>
-          <span class="tag">[Tag]</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Azure</span>
         </div>
       </div>
+
       <div class="stack-group">
-        <h3>[Group 2 name, e.g. AI &amp; Agentic]</h3>
+        <h3>Infrastructure &amp; DevOps</h3>
         <div class="tag-row">
-          <span class="tag purple">[Tag]</span>
-          <span class="tag purple">[Tag]</span>
-          <span class="tag purple">[Tag]</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">CloudFormation</span>
+          <span class="tag">GitOps</span>
+          <span class="tag">Jenkins</span>
+          <span class="tag">GitHub Actions</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Security &amp; Zero Trust</h3>
+        <div class="tag-row">
+          <span class="tag purple">Zero Trust Architecture</span>
+          <span class="tag purple">IAM / Okta</span>
+          <span class="tag purple">SIEM</span>
+          <span class="tag purple">Vault / Secrets Management</span>
+          <span class="tag purple">Threat &amp; Intrusion Detection</span>
+          <span class="tag purple">OAuth2</span>
+          <span class="tag purple">SSO</span>
+          <span class="tag purple">JWT</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Programming Languages</h3>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">Java</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Go</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>AI, Agentic &amp; GenAI</h3>
+        <div class="tag-row">
+          <span class="tag purple">LangChain</span>
+          <span class="tag purple">LangGraph</span>
+          <span class="tag purple">Anthropic API</span>
+          <span class="tag purple">OpenAI API</span>
+          <span class="tag purple">Ollama</span>
+          <span class="tag purple">Hugging Face</span>
+          <span class="tag purple">Chroma</span>
+          <span class="tag purple">Pinecone</span>
+          <span class="tag purple">RAG</span>
+          <span class="tag purple">MCP</span>
+          <span class="tag purple">Agent Frameworks</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Data &amp; Federated ML</h3>
+        <div class="tag-row">
+          <span class="tag">Spark</span>
+          <span class="tag">Kafka</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Federated Learning</span>
+          <span class="tag">Pentaho</span>
+          <span class="tag">Databricks</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Backend Frameworks</h3>
+        <div class="tag-row">
+          <span class="tag">FastAPI</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Node.js / Express</span>
+          <span class="tag">Django</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Databases &amp; Storage</h3>
+        <div class="tag-row">
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">DynamoDB</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Redis</span>
+          <span class="tag">Elasticsearch</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Frontend &amp; UI Frameworks</h3>
+        <div class="tag-row">
+          <span class="tag">Angular</span>
+          <span class="tag">React</span>
+          <span class="tag">Vue</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">Material UI</span>
+          <span class="tag">Tailwind</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Delivery &amp; Process</h3>
+        <div class="tag-row">
+          <span class="tag purple">Agile</span>
+          <span class="tag purple">Scrum</span>
+          <span class="tag purple">Kanban</span>
+          <span class="tag purple">Release Management</span>
+          <span class="tag purple">Production Support</span>
         </div>
       </div>
     </section>

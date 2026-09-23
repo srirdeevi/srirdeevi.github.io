@@ -1,209 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sri Ramya Deevi — Cloud Architect &amp; Agentic AI</title>
-<meta name="description" content="Sri Ramya Deevi — Principal Cloud Architect building agentic AI systems, publishing cloud security research, writing on Zero Trust and DevSecOps.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --navy:#0E1420;
-    --navy-soft:#1B2333;
-    --bg:#F3F5F7;
-    --panel:#FFFFFF;
-    --ink:#1A1F2B;
-    --muted:#5B6373;
-    --line:#E3E7EC;
-    --teal:#0F6E56;
-    --teal-soft:#E4F3EE;
-    --purple:#5B52C4;
-    --purple-soft:#EDECFB;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-    font-family:'IBM Plex Sans', system-ui, sans-serif;
-    font-size:15.5px;
-    line-height:1.65;
-  }
-  h1,h2,h3{font-family:'Space Grotesk', 'IBM Plex Sans', sans-serif;}
-  a{color:var(--purple); text-decoration:none;}
-  a:hover{color:var(--teal);}
-  .shell{
-    display:flex;
-    max-width:1120px;
-    margin:0 auto;
-    min-height:100vh;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Your Name] — [Your Title]</title>
+  <meta name="description" content="[One-line description for search/social previews]">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#0E1420;
+      --bg:#F3F5F7;
+      --panel:#FFFFFF;
+      --ink:#1A1F2B;
+      --muted:#5B6373;
+      --line:#E3E7EC;
+      --teal:#0F6E56;
+      --teal-soft:#E4F3EE;
+      --purple:#5B52C4;
+      --purple-soft:#EDECFB;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:'IBM Plex Sans', system-ui, sans-serif;
+      font-size:15.5px;
+      line-height:1.65;
+    }
+    h1,h2,h3{font-family:'Space Grotesk', 'IBM Plex Sans', sans-serif;}
+    a{color:var(--purple); text-decoration:none;}
+    a:hover{color:var(--teal);}
+    .shell{display:flex;max-width:1120px;margin:0 auto;min-height:100vh;}
 
-  /* Sidebar */
-  aside{
-    width:270px;
-    flex-shrink:0;
-    background:var(--navy);
-    color:#E8E6DE;
-    padding:40px 26px;
-    position:sticky;
-    top:0;
-    height:100vh;
-    overflow-y:auto;
-  }
-  .avatar{
-    width:96px;height:96px;
-    border-radius:20px;
-    background:linear-gradient(155deg, var(--teal), var(--purple));
-    display:flex;align-items:center;justify-content:center;
-    font-family:'Space Grotesk', sans-serif;
-    font-size:32px;font-weight:700;color:#fff;
-    margin-bottom:18px;
-  }
-  aside h1{font-size:21px;margin:0 0 4px;color:#fff;}
-  .title{color:#9FE1CB;font-size:14px;margin:0 0 2px;}
-  .loc{color:#8991A3;font-size:13px;margin:0 0 26px;}
-  .side-block{margin-bottom:26px;}
-  .side-block h3{
-    font-size:11px;text-transform:uppercase;letter-spacing:0.06em;
-    color:#6b7284;margin:0 0 10px;font-family:'IBM Plex Sans',sans-serif;font-weight:600;
-  }
-  .side-links{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:9px;}
-  .side-links a{color:#C7C4B9;font-size:13.5px;}
-  .side-links a:hover{color:#5FBBA0;}
-  .now-note{
-    font-size:13px;color:#B7B3A6;
-    border-left:2px solid #2E3648;
-    padding-left:10px;
-  }
+    aside{
+      width:270px;flex-shrink:0;
+      background:var(--navy);color:#E8E6DE;
+      padding:40px 26px;
+      position:sticky;top:0;height:100vh;overflow-y:auto;
+    }
+    .avatar{
+      width:110px;height:110px;border-radius:20px;
+      background:var(--panel);
+      display:flex;align-items:center;justify-content:center;
+      font-family:'IBM Plex Sans',sans-serif;font-size:11px;
+      color:#9AA3B2;text-align:center;line-height:1.4;
+      border:1px dashed #4a5268;
+      margin-bottom:18px;
+    }
+    aside h1{font-size:21px;margin:0 0 4px;color:#fff;}
+    .title{color:#9FE1CB;font-size:14px;margin:0 0 2px;}
+    .loc{color:#8991A3;font-size:13px;margin:0 0 26px;}
+    .side-block{margin-bottom:26px;}
+    .side-block h3{
+      font-size:11px;text-transform:uppercase;letter-spacing:0.06em;
+      color:#6b7284;margin:0 0 10px;font-weight:600;
+    }
+    .side-links{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:9px;}
+    .side-links a{color:#C7C4B9;font-size:13.5px;}
+    .side-links a:hover{color:#5FBBA0;}
 
-  /* Main */
-  main{flex:1;padding:44px 48px 80px;min-width:0;}
-  nav.tabs{
-    display:flex;gap:6px;flex-wrap:wrap;
-    border-bottom:1px solid var(--line);
-    margin-bottom:34px;
-  }
-  nav.tabs button{
-    font-family:'IBM Plex Sans',sans-serif;
-    font-size:14px;font-weight:500;
-    background:none;border:none;
-    padding:10px 14px;
-    color:var(--muted);
-    cursor:pointer;
-    border-bottom:2px solid transparent;
-    margin-bottom:-1px;
-  }
-  nav.tabs button.active{
-    color:var(--navy);
-    border-bottom-color:var(--teal);
-    font-weight:600;
-  }
-  .panel{display:none;}
-  .panel.active{display:block;}
-  .panel h2{font-size:24px;margin:0 0 16px;color:var(--navy);}
-  .panel p{max-width:64ch;color:var(--ink);}
-  .lede{color:var(--muted);font-size:15px;max-width:62ch;margin-top:-6px;}
+    main{flex:1;padding:44px 48px 80px;min-width:0;}
+    nav.tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:34px;}
+    nav.tabs button{
+      font-family:'IBM Plex Sans',sans-serif;font-size:14px;font-weight:500;
+      background:none;border:none;padding:10px 14px;color:var(--muted);
+      cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;
+    }
+    nav.tabs button.active{color:var(--navy);border-bottom-color:var(--teal);font-weight:600;}
+    .panel{display:none;}
+    .panel.active{display:block;}
+    .panel h2{font-size:24px;margin:0 0 16px;color:var(--navy);}
+    .panel p{max-width:64ch;color:var(--ink);text-align:left;text-indent:1.5em;}
+    .panel p:first-of-type{text-indent:0;}
+    .lede{color:var(--muted);font-size:15px;max-width:62ch;text-indent:0 !important;}
+    .placeholder-box{
+      border:1px dashed #c7cdd6;
+      border-radius:6px;
+      padding:16px 18px;
+      color:var(--muted);
+      font-size:13.5px;
+      background:#fafbfc;
+      margin-top:16px;
+    }
 
-  .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
-    gap:16px;
-    margin-top:24px;
-  }
-  .card{
-    background:var(--panel);
-    border:1px solid var(--line);
-    border-left:3px solid var(--teal);
-    border-radius:6px;
-    padding:18px 18px 16px;
-  }
-  .card.purple{border-left-color:var(--purple);}
-  .card h3{font-size:15.5px;margin:0 0 6px;color:var(--navy);}
-  .card p{font-size:13.5px;color:var(--muted);margin:0;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(230px,1fr));gap:16px;margin-top:24px;}
+    .card{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:6px;padding:18px 18px 16px;}
+    .card.purple{border-left-color:var(--purple);}
+    .card h3{font-size:15.5px;margin:0 0 6px;color:var(--navy);}
+    .card p{font-size:13.5px;color:var(--muted);margin:0;text-indent:0;}
 
-  .poc-list{display:flex;flex-direction:column;gap:14px;margin-top:22px;}
-  .poc{
-    background:var(--panel);
-    border:1px solid var(--line);
-    border-radius:6px;
-    padding:18px 20px;
-    display:flex;
-    gap:16px;
-    align-items:flex-start;
-  }
-  .poc .num{
-    font-family:'JetBrains Mono',monospace;
-    color:var(--teal);
-    font-size:13px;
-    padding-top:3px;
-  }
-  .poc h3{font-size:15.5px;margin:0 0 5px;color:var(--navy);}
-  .poc p{font-size:13.5px;color:var(--muted);margin:0 0 8px;}
-  .poc .links{font-size:13px;display:flex;gap:14px;flex-wrap:wrap;}
-  .status{
-    font-size:11px;font-weight:600;
-    padding:2px 8px;border-radius:10px;
-    background:var(--teal-soft);color:var(--teal);
-    margin-left:auto;white-space:nowrap;
-  }
-  .status.draft{background:var(--purple-soft);color:var(--purple);}
+    .poc-list{display:flex;flex-direction:column;gap:14px;margin-top:22px;}
+    .poc{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px 20px;display:flex;gap:16px;align-items:flex-start;}
+    .poc .num{font-family:'JetBrains Mono',monospace;color:var(--teal);font-size:13px;padding-top:3px;}
+    .poc h3{font-size:15.5px;margin:0 0 5px;color:var(--navy);}
+    .poc p{font-size:13.5px;color:var(--muted);margin:0 0 8px;text-indent:0;}
+    .poc .links{font-size:13px;display:flex;gap:14px;flex-wrap:wrap;}
+    .status{font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;background:var(--purple-soft);color:var(--purple);margin-left:auto;white-space:nowrap;}
 
-  .stack-group{margin-bottom:28px;}
-  .stack-group h3{font-size:15px;color:var(--navy);margin:0 0 10px;}
-  .tag-row{display:flex;flex-wrap:wrap;gap:8px;}
-  .tag{
-    background:var(--teal-soft);color:var(--teal);
-    font-size:13px;font-weight:500;
-    padding:6px 12px;border-radius:16px;
-  }
-  .tag.purple{background:var(--purple-soft);color:var(--purple);}
+    .stack-group{margin-bottom:28px;}
+    .stack-group h3{font-size:15px;color:var(--navy);margin:0 0 10px;}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;}
+    .tag{background:var(--teal-soft);color:var(--teal);font-size:13px;font-weight:500;padding:6px 12px;border-radius:16px;}
+    .tag.purple{background:var(--purple-soft);color:var(--purple);}
 
-  .pub-list{list-style:none;padding:0;margin:20px 0 0;}
-  .pub-list li{
-    padding:12px 0;
-    border-bottom:1px solid var(--line);
-    font-size:14.5px;
-    color:var(--ink);
-  }
-  .pub-list li:last-child{border-bottom:none;}
+    .pub-list{list-style:none;padding:0;margin:20px 0 0;}
+    .pub-list li{padding:12px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--muted);}
+    .pub-list li:last-child{border-bottom:none;}
 
-  .cert-list{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-direction:column;gap:12px;}
-  .cert-list li{
-    display:flex;justify-content:space-between;align-items:baseline;
-    padding:14px 18px;
-    background:var(--panel);
-    border:1px solid var(--line);
-    border-radius:6px;
-  }
-  .cert-list .name{font-weight:600;color:var(--navy);font-size:14.5px;}
-  .cert-list .issuer{color:var(--muted);font-size:13px;}
+    .press-list{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-direction:column;gap:12px;}
+    .press-list li{
+      padding:14px 18px;background:var(--panel);border:1px solid var(--line);border-radius:6px;
+      display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+    }
+    .press-list .outlet{font-weight:600;color:var(--navy);font-size:14.5px;}
+    .press-list .desc{color:var(--muted);font-size:13px;}
 
-  .contact-list{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-direction:column;gap:10px;}
-  .contact-list a{font-size:15px;}
+    .award-list{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-direction:column;gap:12px;}
+    .award-list li{display:flex;justify-content:space-between;align-items:baseline;padding:14px 18px;background:var(--panel);border:1px solid var(--line);border-radius:6px;}
+    .award-list .name{font-weight:600;color:var(--navy);font-size:14.5px;}
+    .award-list .issuer{color:var(--muted);font-size:13px;}
 
-  @media (max-width: 820px){
-    .shell{flex-direction:column;}
-    aside{width:100%;height:auto;position:relative;}
-    main{padding:32px 22px 60px;}
-  }
-</style>
+    .contact-list{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-direction:column;gap:10px;}
+    .contact-list a{font-size:15px;}
+
+    @media (max-width: 820px){
+      .shell{flex-direction:column;}
+      aside{width:100%;height:auto;position:relative;}
+      main{padding:32px 22px 60px;}
+    }
+  </style>
 </head>
 <body>
 <div class="shell">
 
   <aside>
-    <div class="avatar">SD</div>
+    <div class="avatar">[Your<br>Photo]</div>
     <h1>Sri Ramya Deevi</h1>
     <p class="title">Principal Cloud Architect</p>
-    <p class="loc">Washington D.C.–Baltimore area</p>
-
-    <div class="side-block">
-      <h3>Now</h3>
-      <p class="now-note">Wiring the RAG tool into the MCP server for real, and generalizing the coding agent's answer step beyond authentication-style questions.</p>
-    </div>
+    <p class="loc">Washington, DC</p>
 
     <div class="side-block">
       <h3>Elsewhere</h3>
@@ -213,6 +150,8 @@
         <li><a href="https://srirdeevi.hashnode.dev" target="_blank" rel="noopener">Hashnode</a></li>
         <li><a href="https://www.researchgate.net/profile/Sri-Ramya-Deevi" target="_blank" rel="noopener">ResearchGate</a></li>
         <li><a href="https://orcid.org/0009-0004-6454-977X" target="_blank" rel="noopener">ORCID</a></li>
+        <li><a href="https://scholar.google.com/citations?user=XXrw5dwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://www.linkedin.com/in/sri-deevi/" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
     </div>
   </aside>
@@ -220,61 +159,34 @@
   <main>
     <nav class="tabs">
       <button class="active" data-tab="about">About</button>
-      <button data-tab="stack">Tech Stack</button>
       <button data-tab="publications">Publications</button>
-      <button data-tab="certs">Certifications</button>
-      <button data-tab="pocs">AI POCs</button>
+      <button data-tab="toolkit">The Toolkit</button>
+      <button data-tab="ailab">AI Lab</button>
+      <button data-tab="press">Press</button>
+      <button data-tab="awards">Awards</button>
       <button data-tab="contact">Contact</button>
     </nav>
 
     <section id="about" class="panel active">
       <h2>About</h2>
-      <p>I design and build hybrid cloud and Zero Trust architectures across financial services, healthcare, and public sector systems — 17+ years across the stack. Alongside that, I'm hands-on building agentic AI systems from the ground up, writing the code myself, one project at a time.</p>
+      <p>I started my career as an applications developer — writing code, shipping features, learning how systems actually break in production rather than in theory. From there the path moved through senior software engineer, lead engineer, and software architect, each step pulling me further from writing individual features toward designing how entire systems fit together.</p>
+      <p>Somewhere in that progression, the industry itself shifted under me — on-premise infrastructure giving way to cloud, monoliths breaking into services — and I moved with it, into hybrid cloud and Zero Trust architecture. That work has spanned financial services, healthcare, and public sector systems for seventeen years now, and at some point along the way, writing about the work became part of the work itself: published research on cloud security, DevSecOps, and AI-driven threat detection, alongside the architecture itself.</p>
+      <p>The most recent turn in that path started in architecture reviews, of all places — the same design questions resurfacing again and again, answers that existed but were hard to surface. For the past few years, I've been building agentic AI systems to answer a different question: could an agent actually handle this, not just search for it? A tool-use agent, a RAG pipeline, an MCP server, a coding agent that investigates a codebase directly — each one built and documented as I go, the latest step in a path that's always moved toward understanding systems by building them myself.</p>
       <div class="grid">
-        <div class="card"><h3>Cloud Architecture</h3><p>Hybrid cloud, AWS, and infrastructure design across regulated industries.</p></div>
-        <div class="card purple"><h3>Zero Trust &amp; DevSecOps</h3><p>Identity-aware controls, GitOps pipelines, and secure delivery at scale.</p></div>
-        <div class="card"><h3>Agentic AI Development</h3><p>Building tool-use agents, RAG pipelines, MCP servers, and coding agents from scratch.</p></div>
-        <div class="card purple"><h3>Research &amp; Publications</h3><p>~20 papers on cloud security, DevSecOps, and AI/ML-driven threat detection.</p></div>
-      </div>
-    </section>
-
-    <section id="stack" class="panel">
-      <h2>Tech Stack</h2>
-      <p class="lede">Grouped by where I use it — enterprise cloud work on one side, the agentic AI projects on the other.</p>
-
-      <div class="stack-group">
-        <h3>Cloud &amp; Infrastructure</h3>
-        <div class="tag-row">
-          <span class="tag">AWS</span>
-          <span class="tag">Kubernetes</span>
-          <span class="tag">Hybrid Cloud</span>
-          <span class="tag">Zero Trust Architecture</span>
-          <span class="tag">DevSecOps</span>
-          <span class="tag">GitOps</span>
-          <span class="tag">Infrastructure as Code</span>
-          <span class="tag">Cloud-Native Security</span>
-        </div>
-      </div>
-
-      <div class="stack-group">
-        <h3>Agentic AI &amp; ML</h3>
-        <div class="tag-row">
-          <span class="tag purple">Python</span>
-          <span class="tag purple">Anthropic API</span>
-          <span class="tag purple">LangChain</span>
-          <span class="tag purple">Chroma</span>
-          <span class="tag purple">sentence-transformers</span>
-          <span class="tag purple">Ollama</span>
-          <span class="tag purple">FastAPI</span>
-          <span class="tag purple">FastMCP</span>
-          <span class="tag purple">Generative AI Security</span>
-        </div>
+        <div class="card"><h3>Agentic AI</h3><p>Autonomous, tool-using AI systems, built from the ground up.</p></div>
+        <div class="card purple"><h3>Cloud Architecture</h3><p>Hybrid cloud and infrastructure design across regulated industries.</p></div>
+        <div class="card"><h3>DevSecOps</h3><p>Security embedded across the software delivery pipeline.</p></div>
+        <div class="card purple"><h3>Cybersecurity</h3><p>Zero Trust, threat detection, and identity-aware controls.</p></div>
+        <div class="card"><h3>Generative AI</h3><p>Applied GenAI for cybersecurity and cloud-native systems.</p></div>
+        <div class="card purple"><h3>Federated Machine Learning</h3><p>Privacy-preserving ML across distributed and hybrid environments.</p></div>
+        <div class="card"><h3>Software Architecture</h3><p>Designing how systems and services fit together at scale.</p></div>
+        <div class="card purple"><h3>Software Development</h3><p>Full-cycle engineering, from writing code to shipping production systems.</p></div>
       </div>
     </section>
 
     <section id="publications" class="panel">
       <h2>Publications</h2>
-      <p class="lede">~20 peer-reviewed and industry papers spanning hybrid cloud architecture, Zero Trust security, DevSecOps, AI/ML security, Kubernetes, and IoT. Full list and citations on <a href="https://www.researchgate.net/profile/Sri-Ramya-Deevi" target="_blank" rel="noopener">ResearchGate</a> and <a href="https://orcid.org/0009-0004-6454-977X" target="_blank" rel="noopener">ORCID</a>.</p>
+      <p class="lede">Peer-reviewed and industry publications spanning hybrid cloud architecture, Zero Trust security, DevSecOps, AI/ML security, Kubernetes, and IoT. Full list and citations on <a href="https://www.researchgate.net/profile/Sri-Ramya-Deevi" target="_blank" rel="noopener">ResearchGate</a>, <a href="https://orcid.org/0009-0004-6454-977X" target="_blank" rel="noopener">ORCID</a>, and <a href="https://scholar.google.com/citations?user=XXrw5dwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
       <ul class="pub-list">
         <li>Federated Machine Learning Across Hybrid Clouds: Balancing Security and Privacy</li>
         <li>Cyber Threat Intelligence: Leveraging AI for Predictive Analytics in Hybrid Cloud Systems</li>
@@ -299,81 +211,71 @@
       </ul>
     </section>
 
-    <section id="certs" class="panel">
-      <h2>Certifications &amp; Recognition</h2>
-      <ul class="cert-list">
-        <li><span class="name">AWS Certified Solutions Architect</span><span class="issuer">AWS</span></li>
-        <li><span class="name">AWS Certified DevOps Engineer — Professional</span><span class="issuer">AWS</span></li>
-        <li><span class="name">Project Management Professional (PMP)</span><span class="issuer">PMI</span></li>
-        <li><span class="name">M.S., Computer Science</span><span class="issuer">Graduate degree</span></li>
-        <li><span class="name">Cybersecurity Excellence Award</span><span class="issuer">Recipient</span></li>
-      </ul>
+    <section id="toolkit" class="panel">
+      <h2>The Toolkit</h2>
+      <p class="lede">[Short intro — how the stack is grouped.]</p>
+      <div class="stack-group">
+        <h3>[Group 1 name, e.g. Cloud &amp; Infrastructure]</h3>
+        <div class="tag-row">
+          <span class="tag">[Tag]</span>
+          <span class="tag">[Tag]</span>
+          <span class="tag">[Tag]</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3>[Group 2 name, e.g. AI &amp; Agentic]</h3>
+        <div class="tag-row">
+          <span class="tag purple">[Tag]</span>
+          <span class="tag purple">[Tag]</span>
+          <span class="tag purple">[Tag]</span>
+        </div>
+      </div>
     </section>
 
-    <section id="pocs" class="panel">
-      <h2>AI POCs</h2>
-      <p class="lede">Agentic AI projects, built and documented one at a time.</p>
+    <section id="ailab" class="panel">
+      <h2>AI Lab</h2>
+      <p class="lede">[Short intro — what this collection of projects represents.]</p>
       <div class="poc-list">
-
         <div class="poc">
           <span class="num">01</span>
           <div style="flex:1;">
             <div style="display:flex;align-items:baseline;">
-              <h3>Basic Tool-Use Agent</h3>
-              <span class="status">shipped</span>
+              <h3>[Project Name]</h3>
+              <span class="status">[status]</span>
             </div>
-            <p>The Anthropic tool-use loop pattern — calculator and weather tools, agent decides which to call.</p>
-            <div class="links">
-              <a href="https://github.com/srirdeevi/agentic-ai-portfolio" target="_blank" rel="noopener">Repo →</a>
-            </div>
+            <p>[One or two sentences on what it does.]</p>
+            <div class="links"><a href="#">Repo →</a> <a href="#">Write-up →</a></div>
           </div>
         </div>
-
         <div class="poc">
           <span class="num">02</span>
           <div style="flex:1;">
             <div style="display:flex;align-items:baseline;">
-              <h3>RAG Agent</h3>
-              <span class="status">shipped</span>
+              <h3>[Project Name]</h3>
+              <span class="status">[status]</span>
             </div>
-            <p>Document Q&amp;A pipeline — chunked, embedded with sentence-transformers, retrieved via Chroma, answered locally through Ollama.</p>
-            <div class="links">
-              <a href="https://github.com/srirdeevi/agentic-ai-portfolio" target="_blank" rel="noopener">Repo →</a>
-              <a href="https://srirdeevi.hashnode.dev/from-documents-to-intelligent-answers-building-a-rag-agent-from-scratch-lessons-learned" target="_blank" rel="noopener">Write-up →</a>
-            </div>
+            <p>[One or two sentences on what it does.]</p>
+            <div class="links"><a href="#">Repo →</a></div>
           </div>
         </div>
-
-        <div class="poc">
-          <span class="num">03</span>
-          <div style="flex:1;">
-            <div style="display:flex;align-items:baseline;">
-              <h3>MCP Server</h3>
-              <span class="status">shipped</span>
-            </div>
-            <p>Wraps the RAG agent as a discoverable tool over MCP, alongside employee-leave and ticket-lookup tools.</p>
-            <div class="links">
-              <a href="https://github.com/srirdeevi/mcp-server" target="_blank" rel="noopener">Repo →</a>
-              <a href="https://dev.to/sri_d_6dfd4d31319a6389eaa/beyond-chatbots-wrapping-my-rag-agent-in-an-mcp-server-2m0n" target="_blank" rel="noopener">Write-up →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="poc">
-          <span class="num">04</span>
-          <div style="flex:1;">
-            <div style="display:flex;align-items:baseline;">
-              <h3>AI Coding Agent</h3>
-              <span class="status draft">drafting</span>
-            </div>
-            <p>A ReAct-style agent that plans, searches a codebase, reads files, and analyzes structure to answer "where is X implemented?"</p>
-            <div class="links">
-              <a href="https://github.com/srirdeevi/ai-coding-agent" target="_blank" rel="noopener">Repo →</a>
-            </div>
-          </div>
-        </div>
-
       </div>
+    </section>
+
+    <section id="press" class="panel">
+      <h2>Press</h2>
+      <p class="lede">[Short intro — media mentions, quoted articles, bylines.]</p>
+      <ul class="press-list">
+        <li><span class="outlet">[USA Today]</span><span class="desc">[Article title or description] — <a href="#">link</a></span></li>
+        <li><span class="outlet">[Outlet Name]</span><span class="desc">[Article title or description] — <a href="#">link</a></span></li>
+      </ul>
+    </section>
+
+    <section id="awards" class="panel">
+      <h2>Awards</h2>
+      <ul class="award-list">
+        <li><span class="name">[Award Name]</span><span class="issuer">[Issuer, Year]</span></li>
+        <li><span class="name">[Award Name]</span><span class="issuer">[Issuer, Year]</span></li>
+      </ul>
     </section>
 
     <section id="contact" class="panel">
@@ -382,10 +284,12 @@
         <li><a href="https://github.com/srirdeevi" target="_blank" rel="noopener">github.com/srirdeevi</a></li>
         <li><a href="https://dev.to/sri_d_6dfd4d31319a6389eaa" target="_blank" rel="noopener">dev.to/sri_d_6dfd4d31319a6389eaa</a></li>
         <li><a href="https://srirdeevi.hashnode.dev" target="_blank" rel="noopener">srirdeevi.hashnode.dev</a></li>
-        <!-- TODO: replace # with your real LinkedIn URL -->
-        <li><a href="#">linkedin.com/in/TODO-add-your-linkedin</a></li>
-        <!-- TODO: replace with your real contact email -->
-        <li><a href="mailto:TODO@example.com">TODO@example.com</a></li>
+        <li><a href="https://www.researchgate.net/profile/Sri-Ramya-Deevi" target="_blank" rel="noopener">ResearchGate</a></li>
+        <li><a href="https://orcid.org/0009-0004-6454-977X" target="_blank" rel="noopener">ORCID</a></li>
+        <li><a href="https://scholar.google.com/citations?user=XXrw5dwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://www.linkedin.com/in/sri-deevi/" target="_blank" rel="noopener">linkedin.com/in/sri-deevi</a></li>
+        <!-- TODO: add your contact email -->
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
       </ul>
     </section>
 
